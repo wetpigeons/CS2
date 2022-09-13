@@ -1,11 +1,12 @@
 public class RecursiveShapes {
     public static void main(String[] args){
         Turtle t = new Turtle();
-        recursiveStar(t,-100,0,100,4);
-        //recursiveH(t, -100,-100,50,5);
-        //recursiveSpiral(t,-100,100,100,5,0);
-        //tree(t,50);
-        //serpinski(t, -100, -100, 0, 100, 100, -100, 3);
+        t.speed(0.1);
+        //recursiveStar(t,-100,0,200,3);
+        //recursiveH(t, -100,-100,50,3);
+        //recursiveSpiral(t,0,0,300,300,0);
+        //tree(t,100);
+        serpinski(t, -100, -100, 0, 100, 100, -100, 5);
     }
     public static void recursiveH(Turtle t, double x, double y, double size, int iterations){
         H(t, x, y, size);
